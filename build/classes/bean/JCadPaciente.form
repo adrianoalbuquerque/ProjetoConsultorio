@@ -53,8 +53,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
@@ -63,31 +67,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="idpacienteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="pacienteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cpfLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rgLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="idadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="acompanhanteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="idpacienteField" alignment="0" pref="460" max="32767" attributes="0"/>
-                                  <Component id="pacienteField" alignment="0" pref="460" max="32767" attributes="0"/>
-                                  <Component id="cpfField" alignment="0" pref="460" max="32767" attributes="0"/>
-                                  <Component id="rgField" alignment="0" pref="460" max="32767" attributes="0"/>
-                                  <Component id="idadeField" alignment="0" pref="460" max="32767" attributes="0"/>
-                                  <Component id="acompanhanteField" alignment="0" pref="460" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="masterScrollPane" pref="540" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -96,44 +76,15 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="masterScrollPane" pref="153" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="idpacienteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="idpacienteField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="pacienteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="pacienteField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cpfLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cpfField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="rgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="rgField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="idadeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="idadeField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="acompanhanteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="acompanhanteField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="1"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="277" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="saveButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="refreshButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="deleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="newButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -141,166 +92,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JScrollPane" name="masterScrollPane">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTable" name="masterTable">
-          <Properties>
-            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-              <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-              </TableColumnModel>
-            </Property>
-            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
-            </Property>
-          </Properties>
-          <BindingProperties>
-            <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
-              <Subbinding sourcePath="${idpaciente}">
-                <BindingParameter name="NAME" value="C&#xf3;d. Paciente"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
-              </Subbinding>
-              <Subbinding sourcePath="${paciente}">
-                <BindingParameter name="NAME" value="Paciente"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
-              </Subbinding>
-              <Subbinding sourcePath="${cpf}">
-                <BindingParameter name="NAME" value="CPF"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
-              </Subbinding>
-              <Subbinding sourcePath="${rg}">
-                <BindingParameter name="NAME" value="RG"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
-              </Subbinding>
-              <Subbinding sourcePath="${idade}">
-                <BindingParameter name="NAME" value="Idade"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
-              </Subbinding>
-              <Subbinding sourcePath="${acompanhante}">
-                <BindingParameter name="NAME" value="Acompanhante"/>
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
-              </Subbinding>
-            </BindingProperty>
-          </BindingProperties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
-          </AuxValues>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Component class="javax.swing.JLabel" name="idpacienteLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="C&#xf3;d. Paciente:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="pacienteLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Paciente:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="cpfLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="CPF:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="rgLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="RG:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="idadeLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Idade:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="acompanhanteLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Acompanhante:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="idpacienteField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.idpaciente}" target="idpacienteField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idpacienteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="pacienteField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.paciente}" target="pacienteField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="pacienteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="cpfField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cpf}" target="cpfField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cpfField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="rgField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.rg}" target="rgField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="rgField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="idadeField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.idade}" target="idadeField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idadeField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="acompanhanteField">
-      <BindingProperties>
-        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.acompanhante}" target="acompanhanteField" targetPath="text" updateStrategy="0" immediately="false">
-          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
-        </BindingProperty>
-        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="acompanhanteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
-      </BindingProperties>
-    </Component>
     <Component class="javax.swing.JButton" name="saveButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salvar"/>
@@ -352,5 +143,262 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
       </AuxValues>
     </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Dados do Paciente">
+                <Property name="tabTitle" type="java.lang.String" value="Dados do Paciente"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="idpacienteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="pacienteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cpfLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="rgLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="idadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="acompanhanteLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="idpacienteField" alignment="0" pref="435" max="32767" attributes="0"/>
+                          <Component id="pacienteField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="cpfField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="rgField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="idadeField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="acompanhanteField" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="idpacienteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="idpacienteField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="pacienteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pacienteField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cpfLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cpfField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="rgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="rgField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="idadeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="idadeField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="acompanhanteLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="acompanhanteField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JTextField" name="rgField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.rg}" target="rgField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="rgField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="idadeField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.idade}" target="idadeField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idadeField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="rgLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RG:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="pacienteField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.paciente}" target="pacienteField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="pacienteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pacienteLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Paciente:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cpfLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CPF:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="acompanhanteField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.acompanhante}" target="acompanhanteField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="acompanhanteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="idpacienteLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="C&#xf3;d. Paciente:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="idadeLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Idade:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="acompanhanteLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Acompanhante:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="idpacienteField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.idpaciente}" target="idpacienteField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idpacienteField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="cpfField">
+              <BindingProperties>
+                <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.cpf}" target="cpfField" targetPath="text" updateStrategy="0" immediately="false">
+                  <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+                </BindingProperty>
+                <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="cpfField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+              </BindingProperties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Consultar">
+                <Property name="tabTitle" type="java.lang.String" value="Consultar"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="masterTable">
+              <Properties>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
+                  <Subbinding sourcePath="${idpaciente}">
+                    <BindingParameter name="NAME" value="C&#xf3;d. Paciente"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${paciente}">
+                    <BindingParameter name="NAME" value="Paciente"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${cpf}">
+                    <BindingParameter name="NAME" value="CPF"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${rg}">
+                    <BindingParameter name="NAME" value="RG"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${idade}">
+                    <BindingParameter name="NAME" value="Idade"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+                  </Subbinding>
+                  <Subbinding sourcePath="${acompanhante}">
+                    <BindingParameter name="NAME" value="Acompanhante"/>
+                    <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                  </Subbinding>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

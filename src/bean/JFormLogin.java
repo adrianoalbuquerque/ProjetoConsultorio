@@ -151,6 +151,7 @@ public class JFormLogin extends javax.swing.JFrame {
         
         if (list1.size() == 1){
             JFormPrincipal.main(null);
+            dispose();
         } else{
             JOptionPane.showMessageDialog(null, "Usuário ou Senha errada!", "Erro",JOptionPane.ERROR_MESSAGE);
         }

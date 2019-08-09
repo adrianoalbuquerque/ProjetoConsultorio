@@ -110,6 +110,8 @@ public class JFormCadUsuario extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), idUsuarioField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
+        idUsuarioField.addActionListener(formListener);
+
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.nome}"), nomeField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
@@ -241,6 +243,9 @@ public class JFormCadUsuario extends JPanel {
             else if (evt.getSource() == deleteButton) {
                 JFormCadUsuario.this.deleteButtonActionPerformed(evt);
             }
+            else if (evt.getSource() == idUsuarioField) {
+                JFormCadUsuario.this.idUsuarioFieldActionPerformed(evt);
+            }
         }
     }// </editor-fold>//GEN-END:initComponents
 
@@ -306,6 +311,10 @@ public class JFormCadUsuario extends JPanel {
             list.addAll(merged);
         }
     }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void idUsuarioFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idUsuarioFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idUsuarioFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

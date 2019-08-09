@@ -6,6 +6,8 @@
             <name>ProjetoConsultorio</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src.relatorio.dir"/>
+                <root id="src.relatorio2.dir"/>
             </source-roots>
             <test-roots>
                 <root id="test.src.dir"/>

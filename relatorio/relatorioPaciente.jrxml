@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b8c31b3a-3743-45dd-a367-e04398ab422c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     paciente.`idpaciente` AS idpaciente,
+     paciente.`paciente` AS paciente,
+     paciente.`cpf` AS cpf,
+     paciente.`rg` AS rg,
+     paciente.`idade` AS idade,
+     paciente.`acompanhante` AS acompanhante
+FROM
+     `paciente` paciente]]>
+	</queryString>
+	<field name="idpaciente" class="java.lang.Integer"/>
+	<field name="paciente" class="java.lang.String"/>
+	<field name="cpf" class="java.lang.String"/>
+	<field name="rg" class="java.lang.String"/>
+	<field name="idade" class="java.lang.Integer"/>
+	<field name="acompanhante" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" uuid="fe29cf2d-e839-4a34-b428-82fc2cae7ab1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="136" y="23" width="251" height="34" uuid="20316093-4155-49da-b1e6-a508ee6fede9"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Relatório de Paciente]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="9" width="74" height="59" uuid="1596aa8e-a36c-4acf-9fb5-48eb69499280"/>
+				<imageExpression><![CDATA["C:\\Users\\adria\\OneDrive\\Documentos\\NetBeansProjects\\ProjetoConsultorio\\src\\icones\\icon.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="100" height="20" uuid="dc2e3484-89c3-46a9-ac13-af6bf6a4da67"/>
+				<text><![CDATA[Paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="15" width="100" height="20" uuid="3e55c167-3dfe-4d55-9ad1-9153dbdacc3e"/>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="15" width="100" height="20" uuid="504a49b4-771d-42d3-88bd-e054d5e88d65"/>
+				<text><![CDATA[Idade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="15" width="100" height="20" uuid="8b9ddfb9-1822-4a8c-b087-a124d12b748e"/>
+				<text><![CDATA[Acompanhante]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="4" width="555" height="27" uuid="4f3c9a0e-f256-45eb-9054-b85a6ceff8a9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="12" width="100" height="20" uuid="6d6c2718-8894-4f3c-9a1e-46dbdec642d1"/>
+				<textFieldExpression><![CDATA[$F{paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="12" width="100" height="20" uuid="a2895b7d-560a-4ac0-8f58-2f150e034daa"/>
+				<textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="12" width="100" height="20" uuid="c1b62ac9-3d33-416e-bfc0-4db392278ccd"/>
+				<textFieldExpression><![CDATA[$F{idade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="11" width="100" height="20" uuid="44c0d269-cb3d-4449-85cf-985a3a88d688"/>
+				<textFieldExpression><![CDATA[$F{acompanhante}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
